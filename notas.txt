@@ -1,0 +1,55 @@
+! + tab = codigo base html
+
+https://bitbucket.org/ similar ao git porém gratuito, restrito ao número de usuários
+https://git-scm.com/ para instalar o git
+https://www.gitignore.io/ arquivos a serem ignorados pelo git
+
+
+
+--------------------------------------------------
+no Windows terminal = cmd
+
+TERMINAL
+* = qualquer coisa
+LS -  mostra os arquivos (no windows é DIR)
+pwd - caminho 
+cd + pasta = vai pra pasta
+cd + iniciais da pasta - aperta tab = ele mostra a pasta ou completa
+cd.. = volta uma pasta
+mkdir www.mysite.com = cria a pasta com a url
+
+INICIANDO GIT
+git config --global user.name "Anne" //configurar nome
+ git config --global user.email "drc.com" // configurar email
+ git config --list // lista o nome e usuário
+ git init //inicia o git na pasta que você quer versionar
+
+
+ADICIONANDO ARQUIVOS para staged (arquivos que ele vai identificar como novos)
+ git add *.html //adiciona os .htmls (pela extensão)
+ git add css // adiciona a pasta css
+ git add readme.txt // adiciona o arquivo .txt
+ git add .  //adiciona todos os arquivos novos
+
+ADICIONANDO EM COMMITED (comita tudo que está em staged)
+git commit -m "texto identificador da versao"
+
+RETIRANDO UM ARQUIVO DE UNSTAGE
+git rm --cached <file>...
+
+
+q// para sair (quit)
+
+BRANCH = galho
+BRANCH padrão = master
+EXEMPLO
+git
+	master
+		version 1.0 prod
+
+	development
+		version 1.3	
+
+
+MERGE
+você precisa estar no branch que será atualizado
